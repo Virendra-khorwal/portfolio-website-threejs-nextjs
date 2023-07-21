@@ -14,7 +14,11 @@ export default function Home() {
       <meta name="author" content="Virendra Khorwal" />
 
     </Head>
-      <main className="flex min-h-screen flex-col items-center justify-between p-24"></main>
+      <main className="flex min-h-screen flex-col items-center justify-between p-24">
+        <h1 className="text-6xl font-bold text-center">
+          Hello World
+        </h1>
+      </main>
     </>
   );
 }
