@@ -2,6 +2,7 @@ import { Hero, Navbar } from "@/components";
 import Head from "next/head";
 import Image from "next/image";
 import bgImage from "../public/herobg.png";
+import About from "@/components/About";
 
 export default function Home() {
   return (
@@ -23,7 +24,7 @@ export default function Home() {
         <Image src={bgImage} className="bg-cover bg-no-repeat bg-center absolute" alt="bg" />
         <Navbar />
         <Hero />
-        {/* ADD ABOUT COMPONENT */}
+        <About />
         {/* ADD EXPERIENCE COMPONENT */}
         {/* ADD TECH COMPONENT */}
         {/* ADD WORKS COMPONENT */}
