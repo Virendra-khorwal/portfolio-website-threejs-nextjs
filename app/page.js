@@ -1,6 +1,7 @@
 import { Hero, Navbar } from "@/components";
 import Head from "next/head";
 import Image from "next/image";
+import bgImage from "../public/herobg.png";
 
 export default function Home() {
   return (
@@ -18,11 +19,10 @@ export default function Home() {
         />
         <meta name="author" content="Virendra Khorwal" />
       </Head>
-      <main className="relative z-0 bg-primary">
-        <div className="bg-hero-pattern bg-cover bg-no-repeat bg-center">
-          <Navbar />
-          <Hero />
-        </div>
+      <main className="flex relative z-0 bg-primary flex-col">
+        <Image src={bgImage} className="bg-cover bg-no-repeat bg-center absolute" alt="bg" />
+        <Navbar />
+        <Hero />
         {/* ADD ABOUT COMPONENT */}
         {/* ADD EXPERIENCE COMPONENT */}
         {/* ADD TECH COMPONENT */}
