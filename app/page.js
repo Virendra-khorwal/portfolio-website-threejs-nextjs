@@ -3,6 +3,7 @@ import Head from "next/head";
 import Image from "next/image";
 import bgImage from "../public/herobg.png";
 import About from "@/components/About";
+import Tech from "@/components/Tech";
 
 export default function Home() {
   return (
@@ -25,8 +26,7 @@ export default function Home() {
         <Navbar />
         <Hero />
         <About />
-        {/* ADD EXPERIENCE COMPONENT */}
-        {/* ADD TECH COMPONENT */}
+        <Tech />
         {/* ADD WORKS COMPONENT */}
         {/* ADD CONTACT COMPONENT */}
       </main>
