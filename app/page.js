@@ -4,6 +4,7 @@ import Image from "next/image";
 import bgImage from "../public/herobg.png";
 import About from "@/components/About";
 import Tech from "@/components/Tech";
+import Work from "@/components/Work";
 
 export default function Home() {
   return (
@@ -27,7 +28,8 @@ export default function Home() {
         <Hero />
         <About />
         <Tech />
-        {/* ADD WORKS COMPONENT */}
+        <Work />
+ 
         {/* ADD CONTACT COMPONENT */}
       </main>
     </>
