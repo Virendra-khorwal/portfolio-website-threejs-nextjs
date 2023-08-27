@@ -5,6 +5,8 @@ import bgImage from "../public/herobg.png";
 import About from "@/components/About";
 import Tech from "@/components/Tech";
 import Work from "@/components/Work";
+import Contact from "@/components/Contact";
+import { StarsCanvas } from "@/components/canvas";
 
 export default function Home() {
   return (
@@ -23,13 +25,20 @@ export default function Home() {
         <meta name="author" content="Virendra Khorwal" />
       </Head>
       <main className="flex relative z-0 bg-primary flex-col">
-        <Image src={bgImage} className="bg-cover bg-no-repeat bg-center absolute" alt="bg" />
+        <Image
+          src={bgImage}
+          className="bg-cover bg-no-repeat bg-center absolute"
+          alt="bg"
+        />
         <Navbar />
         <Hero />
         <About />
         <Tech />
         <Work />
- 
+        <div className="relative z-0 w-full">
+          <Contact />
+          <StarsCanvas />
+        </div>
         {/* ADD CONTACT COMPONENT */}
       </main>
     </>
